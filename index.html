@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggie Walks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../images/logo.svg" alt="Doggie Walks Logo" class="logo">
+            <span>Doggie Walks</span>
+        </div>
+        <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Meet The Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/corgi_walk.jpeg" alt="Happy dog being walked in the park" class="hero__image">
+            <div class="hero__text">
+                <h1 class="hero__title">Welcome to Doggie Walks</h1>
+                <p class="hero__subtitle">Helping our animal friends one paw at a time</p>
+                <a href="#" class="btn btn--primary">Book a Walk</a>
+            </div>
+        </section>
+
+        <div class="promo-banner">
+            <div class="promo-banner__track">
+                <span>🐾 50% off home visits for new customers</span>
+                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
+                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
+                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
+                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
+                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
+            </div>
+        </div>
+
+        <section class="home__intro reveal">
+            <div class="intro__content">
+                <h2>Why choose us?</h2>
+                <p>We are committed to providing <span class="text-brand">professional and personal</span> care to your
+                    beloved four-legged friends.</p>
+                <p>We are based in <span class="text-brand">Ormskirk</span>. We offer exciting and stimulating walks all
+                    over the beautiful Lancashire and Merseyside countryside. We guarantee your dog will come home tired
+                    and content.</p>
+                <a href="#" class="btn btn--primary">Learn More</a>
+            </div>
+            <div class="image-frame lift">
+                <img src="images/intro__dog1.jpeg" alt="Happy dog">
+            </div>
+        </section>
+
+        <section class="home__middle reveal">
+            <div class="image-frame image-frame--right lift">
+                <img src="images/middle__walk.jpg" alt="Happy dog">
+            </div>
+            <div class="middle__content">
+                <h2>What We Offer</h2>
+                <p>We recognise every dog's needs are different and how busy daily life can be.</p>
+                <p>With services starting from only <span class="text-earth">£10</span>, we ensure you the best possible
+                    service to suit the needs of both <span class="text-earth">you and your pooch.</span></p>
+                <p>We are also fully insured for everybody's peace of mind.</p>
+                <p>For more information on this please <span class="text-earth">contact us or email us</span> using the
+                    link below.</p>
+                <a href="mailto:info@doggiewalks.co.uk" class="btn btn--earth">Email Us</a>
+            </div>
+        </section>
+
+        <section class="home__services reveal">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="home__services-grid">
+                    <div class="home__services-item reveal">
+                        <i data-lucide="heart" class="home__services-icon"></i>
+                        <h3 class="home__services-title">Pet Sitting</h3>
+                        <p class="home__services-description">Caring and attentive sitting for puppies and elderly pets
+                            who need that little bit of extra love and attention.</p>
+                    </div>
+                    <div class="home__services-item reveal reveal--delay-1">
+                        <i data-lucide="house" class="home__services-icon"></i>
+                        <h3 class="home__services-title">Small Pet Visits</h3>
+                        <p class="home__services-description">Short, friendly drop-in visits to check on your smaller
+                            pets and make sure they're happy and comfortable.</p>
+                    </div>
+                    <div class="home__services-item reveal reveal--delay-2">
+                        <i data-lucide="moon" class="home__services-icon"></i>
+                        <h3 class="home__services-title">Overnight Pet Sitting</h3>
+                        <p class="home__services-description">We stay the night so your pet can sleep soundly in their
+                            own home when you're away.</p>
+                    </div>
+                </div>
+                <p class="home__services-note">There's something to suit everyone but if you can't find what you're
+                    looking for don't hesitate to contact us and we'll find the perfect solution for you and your
+                    companion!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="Doggie Walks Logo" class="logo">
+                <span>Doggie Walks</span>
+                <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
+                </p>
+            </div>
+
+            <div class="footer__hours">
+                <h3>Opening Times</h3>
+                <ul>
+                    <li><span>Monday – Friday</span> 8am – 7pm</li>
+                    <li><span>Saturday</span> 8am – 5pm</li>
+                    <li><span>Sunday</span> 12pm – 5pm</li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="tel:01695883112">01695 883 112</a></li>
+                    <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Doggie Walks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

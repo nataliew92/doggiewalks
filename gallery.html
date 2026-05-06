@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Doggie Walks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../images/logo.svg" alt="Doggie Walks Logo" class="logo">
+            <span>Doggie Walks</span>
+        </div>
+        <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Meet The Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <img src="/images/german__shep.jpeg" alt="Dogs playing together" class="page-banner__image">
+            <div class="page-banner__text">
+                <h1 class="page-banner__title">Gallery</h1>
+            </div>
+        </section>
+
+        <div class="promo-banner">
+            <div class="promo-banner__track">
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+            </div>
+        </div>
+
+        <section class="section section--lg section--center">
+            <div class="lead reveal">
+                <h2 class="heading">Every week is a busy week!</h2>
+                <p>Check out how much fun our guests have within our day care centres. All photos have been taken with
+                    the <span class="text-brand">consent of every owner</span>.</p>
+            </div>
+        </section>
+
+        <section class="gallery reveal reveal--delay-1">
+            <div class="gallery__grid">
+                <button class="gallery__item" data-index="0" aria-label="View larger photo">
+                    <img src="images/puppy__lab.jpeg" alt="Dogs playing in the park" loading="lazy">
+                </button>
+                <button class="gallery__item gallery__item--vertical" data-index="1" aria-label="View larger photo">
+                    <img src="images/middle__walk.jpg" alt="A happy dog at the day care centre" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="2" aria-label="View larger photo">
+                    <img src="images/hero_image.jpg" alt="A group of dogs on a walk" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="3" aria-label="View larger photo">
+                    <img src="images/puppy_jump.jpeg" alt="A dog enjoying playtime" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="4" aria-label="View larger photo">
+                    <img src="images/corgi__sit.jpeg" alt="Dogs at our day care" loading="lazy">
+                </button>
+                <button class="gallery__item gallery__item--vertical" data-index="5" aria-label="View larger photo">
+                    <img src="images/intro__dog1.jpeg" alt="A dog posing for the camera" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="6" aria-label="View larger photo">
+                    <img src="images/dog__lookup.jpeg" alt="Dogs running together" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="7" aria-label="View larger photo">
+                    <img src="images/dog_giving_paw.jpeg" alt="A puppy at our centre" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="8" aria-label="View larger photo">
+                    <img src="images/german__shep.jpeg" alt="A dog on a country walk" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="9" aria-label="View larger photo">
+                    <img src="images/fluffy__dog.jpeg" alt="Dogs socialising" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="10" aria-label="View larger photo">
+                    <img src="images/spaniel.jpeg" alt="A happy walker with dogs" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="11" aria-label="View larger photo">
+                    <img src="images/brown__dog.jpg" alt="Dogs at the park" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="12" aria-label="View larger photo">
+                    <img src="images/corgi_walk.jpeg" alt="A dog enjoying a walk" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="13" aria-label="View larger photo">
+                    <img src="images/corgi__sit.jpeg" alt="Dogs at day care" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="14" aria-label="View larger photo">
+                    <img src="images/black_lab.jpeg" alt="A group of pups on an adventure" loading="lazy">
+                </button>
+                <button class="gallery__item" data-index="15" aria-label="View larger photo">
+                    <img src="images/about_hero.jpg" alt="Happy dogs after a walk" loading="lazy">
+                </button>
+            </div>
+        </section>
+
+        <div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+            <button class="lightbox__close" aria-label="Close">
+                <i data-lucide="x"></i>
+            </button>
+            <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="lightbox__content">
+                <img src="" alt="" class="lightbox__image">
+                <p class="lightbox__counter"></p>
+            </div>
+            <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo">
+                <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="Doggie Walks Logo" class="logo">
+                <span>Doggie Walks</span>
+                <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
+                </p>
+            </div>
+
+            <div class="footer__hours">
+                <h3>Opening Times</h3>
+                <ul>
+                    <li><span>Monday – Friday</span> 8am – 7pm</li>
+                    <li><span>Saturday</span> 8am – 5pm</li>
+                    <li><span>Sunday</span> 12pm – 5pm</li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li><a href="tel:01695883112">01695 883 112</a></li>
+                    <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Doggie Walks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
