@@ -517,7 +517,6 @@ p {
 }
 
 .hero__image {
-    z-index: -1;
     position: absolute;
     inset: 0;
     width: 100%;
@@ -527,6 +526,7 @@ p {
 }
 
 .hero__text {
+    z-index:1;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -608,7 +608,6 @@ p {
 }
 
 .page-banner__image {
-    z-index: -1;
     position: absolute;
     inset: 0;
     width: 100%;
@@ -617,6 +616,7 @@ p {
 }
 
 .page-banner__text {
+    z-index: 1;
     position: relative;
     color: var(--colour-white);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 1);
