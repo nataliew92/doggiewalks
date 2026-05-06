@@ -507,13 +507,13 @@ p {
     position: relative;
     min-height: 400px;
     height: 50vh;
-    background: none;
     display: grid;
     text-align: center;
     align-items: end;
     justify-content: center;
     padding: var(--space-md) var(--space-sm);
     padding-top: var(--space-lg);
+    background-color: var(--colour-sky-muted);
 }
 
 .hero__image {
@@ -604,6 +604,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: var(--space-md) var(--space-sm);
+    background-color: var(--colour-sky-muted);
 }
 
 .page-banner__image {
