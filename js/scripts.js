@@ -201,4 +201,4 @@ internalLinks.forEach(link => {
             window.location.href = href;
         }, 300);
     });
-});
+});
