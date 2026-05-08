@@ -1724,9 +1724,16 @@ p {
 /* locations contact page */
 
 .locations__grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: grid;
     gap: var(--space-sm);
     grid-template-columns: 1fr;
+}
+
+.locations__grid li {
+    display: contents;
 }
 
 .location-card {
@@ -1761,6 +1768,7 @@ p {
 }
 
 .location-card__address {
+    font-style: normal;
     text-align: center;
     color: var(--colour-muted);
     font-size: var(--font-sm);
@@ -1773,20 +1781,18 @@ p {
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .location-card {
+    .locations__grid > li > .location-card {
         grid-column: span 2;
     }
 
-    /* Last two cards center themselves on the second row for visual appeal */
-    .location-card:nth-last-child(2) {
+    .locations__grid > li:nth-last-child(2) > .location-card {
         grid-column: 2 / span 2;
     }
 
-    .location-card:last-child {
+    .locations__grid > li:last-child > .location-card {
         grid-column: 4 / span 2;
     }
 }
-
 
 /* contact form */
 
