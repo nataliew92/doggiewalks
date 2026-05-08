@@ -1462,6 +1462,12 @@ p {
     gap: var(--space-md);
     justify-items: center;
     padding-bottom: var(--space-xl);
+    list-style: none;
+    padding: 0;
+}
+
+.team-grid li {
+    display: contents;
 }
 
 .team-card {

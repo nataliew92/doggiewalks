@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the Doggie Walks team — fully trained and insured dog walkers committed to the health and wellbeing of your pet.">
     <title>Meet The Team | Doggie Walks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,37 +15,38 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="../images/logo.svg" alt="Doggie Walks Logo" class="logo">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Doggie Walks home">
+            <img src="../images/logo.svg" alt="" class="logo">
             <span>Doggie Walks</span>
-        </div>
-        <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
+        </a>
+        <button class="header__menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i data-lucide="menu" aria-hidden="true"></i>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="primary-navigation" aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="team.html">Meet The Team</a></li>
+                <li><a href="team.html" aria-current="page">Meet The Team</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="page-banner">
-            <img src="/images/dog_giving_paw.jpeg" alt="The Doggie Walks team with their dogs"
-                class="page-banner__image">
+    <main id="main-content">
+        <section class="page-banner" aria-labelledby="page-title">
+            <img src="/images/dog_giving_paw.jpeg" alt="" class="page-banner__image">
             <div class="page-banner__text">
-                <h1 class="page-banner__title">Meet The Team</h1>
+                <h1 class="page-banner__title" id="page-title">Meet The Team</h1>
             </div>
         </section>
 
-        <div class="promo-banner">
-            <div class="promo-banner__track">
+        <aside class="promo-banner" aria-label="Special offer">
+            <div class="promo-banner__track" aria-hidden="true">
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
@@ -52,11 +54,12 @@
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
             </div>
-        </div>
+            <p class="visually-hidden">50% off home visits for new customers.</p>
+        </aside>
 
-        <section class="section section--lg section--center">
+        <section class="section section--lg section--center" aria-labelledby="team-lead-heading">
             <div class="lead reveal">
-                <h2 class="heading heading--xl">The faces behind Doggie Walks</h2>
+                <h2 class="heading heading--xl" id="team-lead-heading">The faces behind Doggie Walks</h2>
                 <p>We're fully trained and insured to work with animals, and are committed to the
                     <span class="text-brand">health and wellbeing</span> of your pet. We believe you can't sit still in
                     this occupation — we learn more about dogs every day.</p>
@@ -65,73 +68,97 @@
             </div>
         </section>
 
-        <section class="section">
-            <div class="team-grid reveal reveal--delay-1">
-                <article class="team-card">
-                    <span class="team-card__badge">Founder</span>
-                    <img src="images/team/lori-hanson.jpg" alt="Lori Hanson" class="team-card__photo">
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Lori Hanson</h3>
-                        <p class="team-card__role">Founder</p>
-                    </div>
-                </article>
-
-                <article class="team-card">
-                    <img src="images/team/gary-simpson.jpg" alt="Gary Simpson" class="team-card__photo">
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Gary Simpson</h3>
-                        <p class="team-card__role">Team Manager</p>
-                    </div>
-                </article>
-
-                <article class="team-card">
-                    <img src="images/team/rebecca-harrison.jpg" alt="Rebecca Harrison" class="team-card__photo">
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Rebecca Harrison</h3>
-                        <p class="team-card__role">Professional Dog Walker</p>
-                    </div>
-                </article>
-
-                <article class="team-card">
-                    <img src="images/team/joanna-davies.jpg" alt="Joanna Davies" class="team-card__photo">
-                    <div class="team-card__info">
-                        <h3 class="team-card__name">Joanna Davies</h3>
-                        <p class="team-card__role">Professional Dog Walker</p>
-                    </div>
-                </article>
-            </div>
+        <section class="section" aria-label="Team members">
+            <ul class="team-grid reveal reveal--delay-1" role="list">
+                <li>
+                    <article class="team-card" aria-labelledby="member-lori">
+                        <span class="team-card__badge">Founder</span>
+                        <img src="images/team/lori-hanson.jpg"
+                            alt="Portrait of Lori Hanson, founder of Doggie Walks"
+                            class="team-card__photo">
+                        <div class="team-card__info">
+                            <h3 class="team-card__name" id="member-lori">Lori Hanson</h3>
+                            <p class="team-card__role">Founder</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="team-card" aria-labelledby="member-gary">
+                        <img src="images/team/gary-simpson.jpg"
+                            alt="Portrait of Gary Simpson, team manager"
+                            class="team-card__photo">
+                        <div class="team-card__info">
+                            <h3 class="team-card__name" id="member-gary">Gary Simpson</h3>
+                            <p class="team-card__role">Team Manager</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="team-card" aria-labelledby="member-rebecca">
+                        <img src="images/team/rebecca-harrison.jpg"
+                            alt="Portrait of Rebecca Harrison, professional dog walker"
+                            class="team-card__photo">
+                        <div class="team-card__info">
+                            <h3 class="team-card__name" id="member-rebecca">Rebecca Harrison</h3>
+                            <p class="team-card__role">Professional Dog Walker</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="team-card" aria-labelledby="member-joanna">
+                        <img src="images/team/joanna-davies.jpg"
+                            alt="Portrait of Joanna Davies, professional dog walker"
+                            class="team-card__photo">
+                        <div class="team-card__info">
+                            <h3 class="team-card__name" id="member-joanna">Joanna Davies</h3>
+                            <p class="team-card__role">Professional Dog Walker</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer__inner">
             <div class="footer__brand">
-                <img src="images/logo.svg" alt="Doggie Walks Logo" class="logo">
+                <img src="images/logo.svg" alt="" class="logo">
                 <span>Doggie Walks</span>
                 <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
                 </p>
             </div>
 
-            <div class="footer__hours">
-                <h3>Opening Times</h3>
-                <ul>
-                    <li><span>Monday – Friday</span> 8am – 7pm</li>
-                    <li><span>Saturday</span> 8am – 5pm</li>
-                    <li><span>Sunday</span> 12pm – 5pm</li>
-                </ul>
+            <div class="footer__hours" aria-labelledby="hours-heading">
+                <h2 id="hours-heading">Opening Times</h2>
+                <dl>
+                    <div>
+                        <dt>Monday – Friday</dt>
+                        <dd>8am – 7pm</dd>
+                    </div>
+                    <div>
+                        <dt>Saturday</dt>
+                        <dd>8am – 5pm</dd>
+                    </div>
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>12pm – 5pm</dd>
+                    </div>
+                </dl>
             </div>
 
-            <div class="footer__contact">
-                <h3>Get In Touch</h3>
-                <ul>
-                    <li><a href="tel:01695883112">01695 883 112</a></li>
-                    <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
-                </ul>
+            <div class="footer__contact" aria-labelledby="footer-contact-heading">
+                <h2 id="footer-contact-heading">Get In Touch</h2>
+                <address>
+                    <ul>
+                        <li><a href="tel:+441695883112">01695 883 112</a></li>
+                        <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                    </ul>
+                </address>
             </div>
         </div>
 
         <div class="footer__bottom">
-            <p>&copy; 2026 Doggie Walks. All rights reserved.</p>
+            <p><small>&copy; 2026 Doggie Walks. All rights reserved.</small></p>
         </div>
     </footer>
 
