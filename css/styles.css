@@ -1289,6 +1289,12 @@ p {
     gap: var(--space-md);
     max-width: 1200px;
     margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.flip-card-grid > li {
+    display: contents;
 }
 
 .flip-card {
@@ -1305,8 +1311,8 @@ p {
     transform: translateY(0);
 }
 
-.flip-card:nth-child(2) { transition-delay: 0.15s; }
-.flip-card:nth-child(3) { transition-delay: 0.3s; }
+.flip-card-grid > li:nth-child(2) .flip-card { transition-delay: 0.15s; }
+.flip-card-grid > li:nth-child(3) .flip-card { transition-delay: 0.3s; }
 
 .flip-card__inner {
     width: 100%;

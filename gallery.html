@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="See the dogs we care for in action. A gallery of happy pups from our day care centres across Lancashire and Merseyside.">
-    <title>Gallery | Doggie Walks</title>
+    <meta name="description" content="Doggie Walks services and pricing — dog walking from £12, house calls from £15, and full day care from £60. Find the right option for your pup.">
+    <title>Services & Cost | Doggie Walks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,9 +29,9 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
                 <li><a href="team.html">Meet The Team</a></li>
-                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -39,9 +39,9 @@
 
     <main id="main-content">
         <section class="page-banner" aria-labelledby="page-title">
-            <img src="/images/german__shep.jpeg" alt="" class="page-banner__image">
+            <img src="/images/dog__ball.jpeg" alt="" class="page-banner__image">
             <div class="page-banner__text">
-                <h1 class="page-banner__title" id="page-title">Gallery</h1>
+                <h1 class="page-banner__title" id="page-title">Services &amp; Cost</h1>
             </div>
         </section>
 
@@ -57,131 +57,298 @@
             <p class="visually-hidden">50% off home visits for new customers.</p>
         </aside>
 
-        <section class="section section--lg section--center" aria-labelledby="gallery-lead">
+        <section class="section section--lg section--center" aria-labelledby="services-lead">
             <div class="lead reveal">
-                <h2 class="heading" id="gallery-lead">Every week is a busy week!</h2>
-                <p>Check out how much fun our guests have within our day care centres. All photos have been taken with
-                    the <span class="text-brand">consent of every owner</span>.</p>
+                <h2 class="heading heading--xl" id="services-lead">How much is it?</h2>
+                <p>Your dog shall receive the full-length time it deserves. Every dog is unique, meaning that every dog
+                    deserves our full attention <span class="text-brand">7 days a week</span>. Check your local branch
+                    and pop in if you're unsure which service is right for you.</p>
             </div>
         </section>
 
-        <section class="gallery reveal reveal--delay-1" aria-label="Photo gallery">
-            <ul class="gallery__grid" role="list">
+        <section class="section" aria-label="Service options and pricing">
+            <ul class="flip-card-grid" role="list">
                 <li>
-                    <button type="button" class="gallery__item" data-index="0"
-                        aria-label="View larger: Dogs playing in the park">
-                        <img src="images/puppy__lab.jpeg" alt="Dogs playing in the park" loading="lazy">
-                    </button>
+                    <article class="flip-card" role="button" tabindex="0"
+                        aria-label="Dog walking service. £12 per hour. Click for details."
+                        aria-pressed="false">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__face flip-card__front" aria-hidden="false">
+                                <i data-lucide="footprints" class="flip-card__icon" aria-hidden="true"></i>
+                                <h3 class="flip-card__title">Dog Walking</h3>
+                                <p class="flip-card__price">
+                                    <span class="flip-card__amount">£12</span>
+                                    <span class="flip-card__unit">/hour</span>
+                                </p>
+                                <p class="flip-card__duration">1 hour walks · solo or group</p>
+                                <span class="flip-card__hint" aria-hidden="true">Click for details</span>
+                            </div>
+                            <div class="flip-card__face flip-card__back" aria-hidden="true">
+                                <h3 class="flip-card__back-title">Solo or group?</h3>
+                                <p class="flip-card__back-text">Not all dogs enjoy group walks, so we offer two
+                                    different options — solo or group. Discover which is best for your pup.</p>
+                                <p class="flip-card__back-meta">Duration: 1 hour (enquire for more)</p>
+                                <a href="contact.html#contact-form" class="btn btn--ghost">Enquire Now</a>
+                            </div>
+                        </div>
+                    </article>
                 </li>
                 <li>
-                    <button type="button" class="gallery__item gallery__item--vertical" data-index="1"
-                        aria-label="View larger: A happy dog at the day care centre">
-                        <img src="images/middle__walk.jpg" alt="A happy dog at the day care centre" loading="lazy">
-                    </button>
+                    <article class="flip-card" role="button" tabindex="0"
+                        aria-label="House calls service. £15 per hour. Click for details."
+                        aria-pressed="false">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__face flip-card__front" aria-hidden="false">
+                                <i data-lucide="house" class="flip-card__icon" aria-hidden="true"></i>
+                                <h3 class="flip-card__title">House Calls</h3>
+                                <p class="flip-card__price">
+                                    <span class="flip-card__amount">£15</span>
+                                    <span class="flip-card__unit">/hour</span>
+                                </p>
+                                <p class="flip-card__duration">1 hour visits · in your home</p>
+                                <span class="flip-card__hint" aria-hidden="true">Click for details</span>
+                            </div>
+                            <div class="flip-card__face flip-card__back" aria-hidden="true">
+                                <h3 class="flip-card__back-title">Peace of mind</h3>
+                                <p class="flip-card__back-text">Need your dog looking after while you're not home? We
+                                    provide the attention and care your dog deserves while you're away.</p>
+                                <p class="flip-card__back-meta">Duration: 1 hour (enquire for more)</p>
+                                <a href="contact.html#contact-form" class="btn btn--ghost">Enquire Now</a>
+                            </div>
+                        </div>
+                    </article>
                 </li>
                 <li>
-                    <button type="button" class="gallery__item" data-index="2"
-                        aria-label="View larger: A group of dogs on a walk">
-                        <img src="images/hero_image.jpg" alt="A group of dogs on a walk" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="3"
-                        aria-label="View larger: A dog enjoying playtime">
-                        <img src="images/puppy_jump.jpeg" alt="A dog enjoying playtime" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="4"
-                        aria-label="View larger: Dogs at our day care">
-                        <img src="images/corgi__sit.jpeg" alt="Dogs at our day care" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item gallery__item--vertical" data-index="5"
-                        aria-label="View larger: A dog posing for the camera">
-                        <img src="images/intro__dog1.jpeg" alt="A dog posing for the camera" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="6"
-                        aria-label="View larger: Dogs running together">
-                        <img src="images/dog__lookup.jpeg" alt="Dogs running together" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="7"
-                        aria-label="View larger: A puppy at our centre">
-                        <img src="images/dog_giving_paw.jpeg" alt="A puppy at our centre" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="8"
-                        aria-label="View larger: A dog on a country walk">
-                        <img src="images/german__shep.jpeg" alt="A dog on a country walk" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="9"
-                        aria-label="View larger: Dogs socialising">
-                        <img src="images/fluffy__dog.jpeg" alt="Dogs socialising" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="10"
-                        aria-label="View larger: A happy walker with dogs">
-                        <img src="images/spaniel.jpeg" alt="A happy walker with dogs" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="11"
-                        aria-label="View larger: Dogs at the park">
-                        <img src="images/brown__dog.jpg" alt="Dogs at the park" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="12"
-                        aria-label="View larger: A dog enjoying a walk">
-                        <img src="images/corgi_walk.jpeg" alt="A dog enjoying a walk" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="13"
-                        aria-label="View larger: Dogs at day care">
-                        <img src="images/corgi__sit.jpeg" alt="Dogs at day care" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="14"
-                        aria-label="View larger: A group of pups on an adventure">
-                        <img src="images/black_lab.jpeg" alt="A group of pups on an adventure" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="gallery__item" data-index="15"
-                        aria-label="View larger: Happy dogs after a walk">
-                        <img src="images/about_hero.jpg" alt="Happy dogs after a walk" loading="lazy">
-                    </button>
+                    <article class="flip-card" role="button" tabindex="0"
+                        aria-label="Day care service. £60 per day. Click for details."
+                        aria-pressed="false">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__face flip-card__front" aria-hidden="false">
+                                <i data-lucide="building-2" class="flip-card__icon" aria-hidden="true"></i>
+                                <h3 class="flip-card__title">Day Care</h3>
+                                <p class="flip-card__price">
+                                    <span class="flip-card__amount">£60</span>
+                                    <span class="flip-card__unit">/day</span>
+                                </p>
+                                <p class="flip-card__duration">8 hours · at our centres</p>
+                                <span class="flip-card__hint" aria-hidden="true">Click for details</span>
+                            </div>
+                            <div class="flip-card__face flip-card__back" aria-hidden="true">
+                                <h3 class="flip-card__back-title">Full day care</h3>
+                                <p class="flip-card__back-text">Our professional centres are clean, modern and safe.
+                                    Includes feeding, bathing, walking and rest — everything your dog needs in one
+                                    place.</p>
+                                <p class="flip-card__back-meta">Duration: 8 hours per day</p>
+                                <a href="contact.html#contact-form" class="btn btn--ghost">Enquire Now</a>
+                            </div>
+                        </div>
+                    </article>
                 </li>
             </ul>
         </section>
 
-        <div class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
-            <h2 id="lightbox-title" class="visually-hidden">Photo viewer</h2>
-            <button type="button" class="lightbox__close" aria-label="Close photo viewer">
-                <i data-lucide="x" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo">
-                <i data-lucide="chevron-left" aria-hidden="true"></i>
-            </button>
-            <div class="lightbox__content">
-                <img src="" alt="" class="lightbox__image">
-                <p class="lightbox__counter" aria-live="polite"></p>
+        <section class="section section--lg section--sky section--center" aria-labelledby="cta-heading">
+            <div class="lead reveal">
+                <h2 class="heading" id="cta-heading">Still not sure?</h2>
+                <p>Pop into your local branch or get in touch — we'd love to help you find the right service for your
+                    pup.</p>
+                <div class="services-cta-buttons">
+                    <a href="contact.html" class="btn btn--primary">Contact Us</a>
+                    <a href="contact.html#locations" class="btn btn--outline">Find a Branch</a>
+                </div>
             </div>
-            <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Next photo">
-                <i data-lucide="chevron-right" aria-hidden="true"></i>
-            </button>
-        </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="" class="logo">
+                <span>Doggie Walks</span>
+                <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
+                </p>
+            </div>
+
+            <div class="footer__hours" aria-labelledby="hours-heading">
+                <h2 id="hours-heading">Opening Times</h2>
+                <dl>
+                    <div>
+                        <dt>Monday – Friday</dt>
+                        <dd>8am – 7pm</dd>
+                    </div>
+                    <div>
+                        <dt>Saturday</dt>
+                        <dd>8am – 5pm</dd>
+                    </div>
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>12pm – 5pm</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="footer__contact" aria-labelledby="footer-contact-heading">
+                <h2 id="footer-contact-heading">Get In Touch</h2>
+                <address><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doggie Walks services and pricing — dog walking from £12, house calls from £15, and full day care from £60. Find the right option for your pup.">
+    <title>Services & Cost | Doggie Walks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Doggie Walks home">
+            <img src="../images/logo.svg" alt="" class="logo">
+            <span>Doggie Walks</span>
+        </a>
+        <button class="header__menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+        <nav class="header__nav" id="primary-navigation" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="team.html">Meet The Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-banner" aria-labelledby="page-title">
+            <img src="/images/dog__ball.jpeg" alt="" class="page-banner__image">
+            <div class="page-banner__text">
+                <h1 class="page-banner__title" id="page-title">Services &amp; Cost</h1>
+            </div>
+        </section>
+
+        <aside class="promo-banner" aria-label="Special offer">
+            <div class="promo-banner__track" aria-hidden="true">
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+            </div>
+            <p class="visually-hidden">50% off home visits for new customers.</p>
+        </aside>
+
+        <section class="section section--lg section--center" aria-labelledby="services-lead">
+            <div class="lead reveal">
+                <h2 class="heading heading--xl" id="services-lead">How much is it?</h2>
+                <p>Your dog shall receive the full-length time it deserves. Every dog is unique, meaning that every dog
+                    deserves our full attention <span class="text-brand">7 days a week</span>. Check your local branch
+                    and pop in if you're unsure which service is right for you.</p>
+            </div>
+        </section>
+
+        <section class="section" aria-label="Service options and pricing">
+            <ul class="flip-card-grid" role="list">
+                <li>
+                    <article class="flip-card" role="button" tabindex="0"
+                        aria-label="Dog walking service. £12 per hour. Click for details."
+                        aria-pressed="false">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__face flip-card__front" aria-hidden="false">
+                                <i data-lucide="footprints" class="flip-card__icon" aria-hidden="true"></i>
+                                <h3 class="flip-card__title">Dog Walking</h3>
+                                <p class="flip-card__price">
+                                    <span class="flip-card__amount">£12</span>
+                                    <span class="flip-card__unit">/hour</span>
+                                </p>
+                                <p class="flip-card__duration">1 hour walks · solo or group</p>
+                                <span class="flip-card__hint" aria-hidden="true">Click for details</span>
+                            </div>
+                            <div class="flip-card__face flip-card__back" aria-hidden="true">
+                                <h3 class="flip-card__back-title">Solo or group?</h3>
+                                <p class="flip-card__back-text">Not all dogs enjoy group walks, so we offer two
+                                    different options — solo or group. Discover which is best for your pup.</p>
+                                <p class="flip-card__back-meta">Duration: 1 hour (enquire for more)</p>
+                                <a href="contact.html#contact-form" class="btn btn--ghost">Enquire Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="flip-card" role="button" tabindex="0"
+                        aria-label="House calls service. £15 per hour. Click for details."
+                        aria-pressed="false">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__face flip-card__front" aria-hidden="false">
+                                <i data-lucide="house" class="flip-card__icon" aria-hidden="true"></i>
+                                <h3 class="flip-card__title">House Calls</h3>
+                                <p class="flip-card__price">
+                                    <span class="flip-card__amount">£15</span>
+                                    <span class="flip-card__unit">/hour</span>
+                                </p>
+                                <p class="flip-card__duration">1 hour visits · in your home</p>
+                                <span class="flip-card__hint" aria-hidden="true">Click for details</span>
+                            </div>
+                            <div class="flip-card__face flip-card__back" aria-hidden="true">
+                                <h3 class="flip-card__back-title">Peace of mind</h3>
+                                <p class="flip-card__back-text">Need your dog looking after while you're not home? We
+                                    provide the attention and care your dog deserves while you're away.</p>
+                                <p class="flip-card__back-meta">Duration: 1 hour (enquire for more)</p>
+                                <a href="contact.html#contact-form" class="btn btn--ghost">Enquire Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="flip-card" role="button" tabindex="0"
+                        aria-label="Day care service. £60 per day. Click for details."
+                        aria-pressed="false">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__face flip-card__front" aria-hidden="false">
+                                <i data-lucide="building-2" class="flip-card__icon" aria-hidden="true"></i>
+                                <h3 class="flip-card__title">Day Care</h3>
+                                <p class="flip-card__price">
+                                    <span class="flip-card__amount">£60</span>
+                                    <span class="flip-card__unit">/day</span>
+                                </p>
+                                <p class="flip-card__duration">8 hours · at our centres</p>
+                                <span class="flip-card__hint" aria-hidden="true">Click for details</span>
+                            </div>
+                            <div class="flip-card__face flip-card__back" aria-hidden="true">
+                                <h3 class="flip-card__back-title">Full day care</h3>
+                                <p class="flip-card__back-text">Our professional centres are clean, modern and safe.
+                                    Includes feeding, bathing, walking and rest — everything your dog needs in one
+                                    place.</p>
+                                <p class="flip-card__back-meta">Duration: 8 hours per day</p>
+                                <a href="contact.html#contact-form" class="btn btn--ghost">Enquire Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section section--lg section--sky section--center" aria-labelledby="cta-heading">
+            <div class="lead reveal">
+                <h2 class="heading" id="cta-heading">Still not sure?</h2>
+                <p>Pop into your local branch or get in touch — we'd love to help you find the right service for your
+                    pup.</p>
+                <div class="services-cta-buttons">
+                    <a href="contact.html" class="btn btn--primary">Contact Us</a>
+                    <a href="contact.html#locations" class="btn btn--outline">Find a Branch</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer" role="contentinfo">
@@ -214,6 +381,24 @@
             <div class="footer__contact" aria-labelledby="footer-contact-heading">
                 <h2 id="footer-contact-heading">Get In Touch</h2>
                 <address>
+                    <ul>
+                        <li><a href="tel:+441695883112">01695 883 112</a></li>
+                        <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p><small>&copy; 2026 Doggie Walks. All rights reserved.</small></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
                     <ul>
                         <li><a href="tel:+441695883112">01695 883 112</a></li>
                         <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>

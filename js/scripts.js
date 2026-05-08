@@ -30,13 +30,15 @@ const flipCards = document.querySelectorAll('.flip-card');
 
 flipCards.forEach(card => {
     card.addEventListener('click', () => {
-        card.classList.toggle('is-flipped');
+        const isFlipped = card.classList.toggle('is-flipped');
+        card.setAttribute('aria-pressed', isFlipped);
     });
 
     card.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            card.classList.toggle('is-flipped');
+            const isFlipped = card.classList.toggle('is-flipped');
+            card.setAttribute('aria-pressed', isFlipped);
         }
     });
 });
@@ -201,4 +203,4 @@ internalLinks.forEach(link => {
             window.location.href = href;
         }, 300);
     });
-});
+});
