@@ -1,7 +1,3 @@
-/* =============================================================
-   ROOT
-   ============================================================= */
-
 :root {
     --colour-sky: #b8d8e8;
     --colour-sky-light: #daeef7;
@@ -43,11 +39,6 @@
 
     --ease-lift: 0.25s ease-out;
 }
-
-
-/* =============================================================
-   RESET
-   ============================================================= */
 
 *,
 *::before,
@@ -113,13 +104,7 @@ p {
     font-family: var(--font-body);
 }
 
-
-/* =============================================================
-   REUSABLE UTILITIES
-   These are used across multiple pages/sections
-   ============================================================= */
-
-/* Containers — center content with various max widths */
+/* Containers */
 
 .container {
     max-width: 1200px;
@@ -137,7 +122,7 @@ p {
 }
 
 
-/* Sections — handle background colour and padding consistently */
+/* Sections */
 
 .section {
     width: 100%;
@@ -175,8 +160,7 @@ p {
 }
 
 
-/* Lead block — centered intro pattern used across multiple pages
-   (services, team, gallery, locations etc.) */
+/* Lead block */
 
 .lead {
     max-width: 700px;
@@ -223,7 +207,7 @@ p {
 }
 
 
-/* Subheading — smaller centered description text */
+/* Subheading */
 
 .subheading {
     color: var(--colour-muted);
@@ -232,7 +216,7 @@ p {
 }
 
 
-/* Brand text — for span highlights inline */
+/* Brand text */
 
 .text-brand {
     color: var(--colour-sky-deep);
@@ -314,7 +298,7 @@ p {
 }
 
 
-/* Card — base white card with shadow */
+/* Card */
 
 .card {
     background-color: var(--colour-white);
@@ -324,7 +308,7 @@ p {
 }
 
 
-/* Lift hover — adds smooth transform on hover, used on cards/images */
+/* Lift hover */
 
 .lift {
     transition: transform var(--ease-lift), box-shadow var(--ease-lift);
@@ -336,7 +320,7 @@ p {
 }
 
 
-/* Image frame — image with decorative coloured backdrop offset behind */
+/* Image frame */
 
 .image-frame {
     position: relative;
@@ -373,9 +357,7 @@ p {
 }
 
 
-/* =============================================================
-   HEADER & NAV
-   ============================================================= */
+/* header and nav */
 
 .header {
     z-index: 10;
@@ -499,9 +481,7 @@ p {
 }
 
 
-/* =============================================================
-   HERO (home page only)
-   ============================================================= */
+/* hero (home page) */
 
 .hero {
     position: relative;
@@ -589,9 +569,7 @@ p {
 }
 
 
-/* =============================================================
-   PAGE BANNER (inner pages)
-   ============================================================= */
+/* page banner */
 
 .page-banner {
     overflow: hidden;
@@ -638,9 +616,7 @@ p {
 }
 
 
-/* =============================================================
-   PROMO BANNER
-   ============================================================= */
+/* promo banner */
 
 .promo-banner {
     background-color: var(--colour-sky-deep);
@@ -678,9 +654,7 @@ p {
 }
 
 
-/* =============================================================
-   HOME — INTRO BLOCK (text + image side by side)
-   ============================================================= */
+/* home intro block */
 
 .home__intro {
     border-radius: var(--radius-xl);
@@ -747,9 +721,7 @@ p {
 }
 
 
-/* =============================================================
-   HOME — MIDDLE BLOCK (image + text, mirrored)
-   ============================================================= */
+/* home middle block */
 
 .home__middle {
     border-radius: var(--radius-xl);
@@ -813,9 +785,7 @@ p {
 }
 
 
-/* =============================================================
-   HOME — SERVICES (icon cards)
-   ============================================================= */
+/* home services (3 item block) */
 
 .home__services {
     background-color: var(--colour-sky-light);
@@ -921,9 +891,7 @@ p {
 }
 
 
-/* =============================================================
-   ABOUT — INTRO QUOTE BLOCK
-   ============================================================= */
+/* about */
 
 .about-intro {
     text-align: center;
@@ -1029,9 +997,7 @@ p {
 }
 
 
-/* =============================================================
-   STATS BANNER (about page)
-   ============================================================= */
+/* stats banner */
 
 .stats {
     overflow: hidden;
@@ -1105,9 +1071,7 @@ p {
 }
 
 
-/* =============================================================
-   TIMELINE (about page)
-   ============================================================= */
+/* timeline */
 
 .timeline-section {
     background-color: var(--colour-cream);
@@ -1224,9 +1188,7 @@ p {
 }
 
 
-/* =============================================================
-   PAW DIVIDER (decorative)
-   ============================================================= */
+/* paw divider */
 
 .paw-divider {
     overflow: hidden;
@@ -1290,9 +1252,7 @@ p {
 }
 
 
-/* =============================================================
-   SERVICES — FLIP CARDS
-   ============================================================= */
+/* services flip cards */
 
 .flip-card-grid {
     display: grid;
@@ -1457,9 +1417,7 @@ p {
 }
 
 
-/* =============================================================
-   TEAM CARDS
-   ============================================================= */
+/* team cards */
 
 .team-grid {
     max-width: 1200px;
@@ -1544,9 +1502,7 @@ p {
 }
 
 
-/* =============================================================
-   GALLERY GRID
-   ============================================================= */
+/* gallery grid */
 
 .gallery {
     width: 100%;
@@ -1615,9 +1571,7 @@ p {
 }
 
 
-/* =============================================================
-   LIGHTBOX
-   ============================================================= */
+/* lightbox for gallery */
 
 .lightbox {
     z-index: 100;
@@ -1738,9 +1692,7 @@ p {
 }
 
 
-/* =============================================================
-   LOCATIONS (contact page)
-   ============================================================= */
+/* locations contact page */
 
 .locations__grid {
     display: grid;
@@ -1807,9 +1759,7 @@ p {
 }
 
 
-/* =============================================================
-   CONTACT FORM
-   ============================================================= */
+/* contact form */
 
 .contact-form-section {
     scroll-margin-top: 80px;
@@ -1954,9 +1904,7 @@ p {
 }
 
 
-/* =============================================================
-   SERVICES — CTA BLOCK
-   ============================================================= */
+/* services call to action buttons */
 
 .services-cta-buttons {
     width: 100%;
@@ -1974,11 +1922,7 @@ p {
     }
 }
 
-/* =============================================================
-   SCROLL ANIMATIONS — fade up on view
-   Add .reveal to any element you want to animate in.
-   Add .reveal--delay-1, --delay-2, --delay-3 for staggered reveals.
-   ============================================================= */
+/* all scroll animations */
 
 .reveal {
     opacity: 0;
@@ -2003,9 +1947,7 @@ p {
     }
 }
 
-/* =============================================================
-   PAGE TRANSITIONS
-   ============================================================= */
+/* page transition animation */
 
 main {
     animation: page-fade-in 0.5s ease;
@@ -2037,9 +1979,7 @@ body.is-leaving main {
     }
 }
 
-/* =============================================================
-   FOOTER
-   ============================================================= */
+/* footer */
 
 .footer {
     width: 100%;

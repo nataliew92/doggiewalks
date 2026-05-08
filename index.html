@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doggie Walks</title>
+    <meta name="description" content="Professional dog walking and pet care across Lancashire and Merseyside. Pet sitting, small pet visits and overnight care from Doggie Walks.">
+    <title>Doggie Walks | Professional Dog Walking in Lancashire & Merseyside</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,17 +15,19 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="../images/logo.svg" alt="Doggie Walks Logo" class="logo">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Doggie Walks home">
+            <img src="../images/logo.svg" alt="" class="logo">
             <span>Doggie Walks</span>
-        </div>
-        <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
+        </a>
+        <button class="header__menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i data-lucide="menu" aria-hidden="true"></i>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="primary-navigation" aria-label="Primary">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Meet The Team</a></li>
@@ -34,30 +37,31 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/corgi_walk.jpeg" alt="Happy dog being walked in the park" class="hero__image">
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="images/corgi_walk.jpeg" alt="" class="hero__image">
             <div class="hero__text">
-                <h1 class="hero__title">Welcome to Doggie Walks</h1>
+                <h1 class="hero__title" id="hero-title">Welcome to Doggie Walks</h1>
                 <p class="hero__subtitle">Helping our animal friends one paw at a time</p>
                 <a href="contact.html" class="btn btn--primary">Book a Walk</a>
             </div>
         </section>
 
-        <div class="promo-banner">
-            <div class="promo-banner__track">
+        <aside class="promo-banner" aria-label="Special offer">
+            <div class="promo-banner__track" aria-hidden="true">
                 <span>🐾 50% off home visits for new customers</span>
-                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
-                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
-                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
-                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
-                <span aria-hidden="true">🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
+                <span>🐾 50% off home visits for new customers</span>
             </div>
-        </div>
+            <p class="visually-hidden">50% off home visits for new customers.</p>
+        </aside>
 
-        <section class="home__intro reveal">
+        <section class="home__intro reveal" aria-labelledby="intro-heading">
             <div class="intro__content">
-                <h2>Why choose us?</h2>
+                <h2 id="intro-heading">Why choose us?</h2>
                 <p>We are committed to providing <span class="text-brand">professional and personal</span> care to your
                     beloved four-legged friends.</p>
                 <p>We are based in <span class="text-brand">Ormskirk</span>. We offer exciting and stimulating walks all
@@ -65,17 +69,17 @@
                     and content.</p>
                 <a href="about.html" class="btn btn--primary">Learn More</a>
             </div>
-            <div class="image-frame lift">
-                <img src="images/intro__dog1.jpeg" alt="Happy dog">
-            </div>
+            <figure class="image-frame lift">
+                <img src="images/intro__dog1.jpeg" alt="A content black and white dog sitting on the floor and looking at the camera">
+            </figure>
         </section>
 
-        <section class="home__middle reveal">
-            <div class="image-frame image-frame--right lift">
-                <img src="images/middle__walk.jpg" alt="Happy dog">
-            </div>
+        <section class="home__middle reveal" aria-labelledby="middle-heading">
+            <figure class="image-frame image-frame--right lift">
+                <img src="images/middle__walk.jpg" alt="A dog walker with a brown dog on a crisp morning">
+            </figure>
             <div class="middle__content">
-                <h2>What We Offer</h2>
+                <h2 id="middle-heading">What We Offer</h2>
                 <p>We recognise every dog's needs are different and how busy daily life can be.</p>
                 <p>With services starting from only <span class="text-earth">£10</span>, we ensure you the best possible
                     service to suit the needs of both <span class="text-earth">you and your pooch.</span></p>
@@ -86,29 +90,29 @@
             </div>
         </section>
 
-        <section class="home__services reveal">
+        <section class="home__services reveal" aria-labelledby="services-heading">
             <div class="container">
-                <h2>Our Services</h2>
-                <div class="home__services-grid">
-                    <div class="home__services-item reveal">
-                        <i data-lucide="heart" class="home__services-icon"></i>
+                <h2 id="services-heading">Our Services</h2>
+                <ul class="home__services-grid" role="list">
+                    <li class="home__services-item reveal">
+                        <i data-lucide="heart" class="home__services-icon" aria-hidden="true"></i>
                         <h3 class="home__services-title">Pet Sitting</h3>
                         <p class="home__services-description">Caring and attentive sitting for puppies and elderly pets
                             who need that little bit of extra love and attention.</p>
-                    </div>
-                    <div class="home__services-item reveal reveal--delay-1">
-                        <i data-lucide="house" class="home__services-icon"></i>
+                    </li>
+                    <li class="home__services-item reveal reveal--delay-1">
+                        <i data-lucide="house" class="home__services-icon" aria-hidden="true"></i>
                         <h3 class="home__services-title">Small Pet Visits</h3>
                         <p class="home__services-description">Short, friendly drop-in visits to check on your smaller
                             pets and make sure they're happy and comfortable.</p>
-                    </div>
-                    <div class="home__services-item reveal reveal--delay-2">
-                        <i data-lucide="moon" class="home__services-icon"></i>
+                    </li>
+                    <li class="home__services-item reveal reveal--delay-2">
+                        <i data-lucide="moon" class="home__services-icon" aria-hidden="true"></i>
                         <h3 class="home__services-title">Overnight Pet Sitting</h3>
                         <p class="home__services-description">We stay the night so your pet can sleep soundly in their
                             own home when you're away.</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <p class="home__services-note">There's something to suit everyone but if you can't find what you're
                     looking for don't hesitate to contact us and we'll find the perfect solution for you and your
                     companion!</p>
@@ -116,35 +120,46 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer__inner">
             <div class="footer__brand">
-                <img src="images/logo.svg" alt="Doggie Walks Logo" class="logo">
+                <img src="images/logo.svg" alt="" class="logo">
                 <span>Doggie Walks</span>
                 <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
                 </p>
             </div>
 
-            <div class="footer__hours">
-                <h3>Opening Times</h3>
-                <ul>
-                    <li><span>Monday – Friday</span> 8am – 7pm</li>
-                    <li><span>Saturday</span> 8am – 5pm</li>
-                    <li><span>Sunday</span> 12pm – 5pm</li>
-                </ul>
+            <div class="footer__hours" aria-labelledby="hours-heading">
+                <h2 id="hours-heading">Opening Times</h2>
+                <dl>
+                    <div>
+                        <dt>Monday – Friday</dt>
+                        <dd>8am – 7pm</dd>
+                    </div>
+                    <div>
+                        <dt>Saturday</dt>
+                        <dd>8am – 5pm</dd>
+                    </div>
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>12pm – 5pm</dd>
+                    </div>
+                </dl>
             </div>
 
-            <div class="footer__contact">
-                <h3>Get In Touch</h3>
-                <ul>
-                    <li><a href="tel:01695883112">01695 883 112</a></li>
-                    <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
-                </ul>
+            <div class="footer__contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <address>
+                    <ul>
+                        <li><a href="tel:+441695883112">01695 883 112</a></li>
+                        <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                    </ul>
+                </address>
             </div>
         </div>
 
         <div class="footer__bottom">
-            <p>&copy; 2026 Doggie Walks. All rights reserved.</p>
+            <p><small>&copy; 2026 Doggie Walks. All rights reserved.</small></p>
         </div>
     </footer>
 
