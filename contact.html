@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Doggie Walks. Find your nearest branch in Ormskirk, Southport, Warrington, Preston or Liverpool, or send us a message online.">
     <title>Contact | Doggie Walks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,36 +15,38 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="../images/logo.svg" alt="Doggie Walks Logo" class="logo">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Doggie Walks home">
+            <img src="../images/logo.svg" alt="" class="logo">
             <span>Doggie Walks</span>
-        </div>
-        <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
+        </a>
+        <button class="header__menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i data-lucide="menu" aria-hidden="true"></i>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="primary-navigation" aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Meet The Team</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="page-banner">
-            <img src="/images/brown__dog.jpg" alt="A friendly dog with a leash" class="page-banner__image">
+    <main id="main-content">
+        <section class="page-banner" aria-labelledby="page-title">
+            <img src="/images/brown__dog.jpg" alt="" class="page-banner__image">
             <div class="page-banner__text">
-                <h1 class="page-banner__title">Contact Us</h1>
+                <h1 class="page-banner__title" id="page-title">Contact Us</h1>
             </div>
         </section>
 
-        <div class="promo-banner">
-            <div class="promo-banner__track">
+        <aside class="promo-banner" aria-label="Special offer">
+            <div class="promo-banner__track" aria-hidden="true">
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
@@ -51,57 +54,78 @@
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
             </div>
-        </div>
+            <p class="visually-hidden">50% off home visits for new customers.</p>
+        </aside>
 
-        <section class="home__intro reveal">
+        <section class="home__intro reveal" aria-labelledby="intro-heading">
             <div class="intro__content">
-                <h2>Get in touch</h2>
+                <h2 id="intro-heading">Get in touch</h2>
                 <p>We have a wide variety of <span class="text-brand">daycare facilities</span> across Lancashire and
                     Merseyside. Feel free to pop in to your nearest centre or fill out the form below — we'll get back
                     to you as soon as we can.</p>
                 <a href="#contact-form" class="btn btn--primary">Send a Message</a>
             </div>
-            <div class="image-frame lift">
-                <img src="images/dog__lookup.jpeg" alt="A happy dog ready for a walk">
-            </div>
+            <figure class="image-frame lift">
+                <img src="images/dog__lookup.jpeg" alt="A happy dog looking up, ready for a walk">
+            </figure>
         </section>
 
-        <section class="section section--lg section--center" id="locations">
+        <section class="section section--lg section--center" id="locations" aria-labelledby="locations-heading">
             <div class="container reveal">
-                <h2 class="heading">Our Locations</h2>
+                <h2 class="heading" id="locations-heading">Our Locations</h2>
                 <p class="subheading">Three friendly centres ready to welcome your pup.<br>We also offer services in
                     Preston and Liverpool.</p>
-                <div class="locations__grid">
-                    <article class="location-card reveal reveal--delay-1">
-                        <i data-lucide="map-pin" class="location-card__icon"></i>
-                        <h3 class="location-card__name">Ormskirk</h3>
-                        <p class="location-card__address">3-5 St Helens Road<br>Ormskirk<br>L35 4PO</p>
-                    </article>
-                    <article class="location-card reveal reveal--delay-2">
-                        <i data-lucide="map-pin" class="location-card__icon"></i>
-                        <h3 class="location-card__name">Southport</h3>
-                        <p class="location-card__address">150 Lord Street<br>Southport<br>PR9 0NP</p>
-                    </article>
-                    <article class="location-card reveal reveal--delay-3">
-                        <i data-lucide="map-pin" class="location-card__icon"></i>
-                        <h3 class="location-card__name">Warrington</h3>
-                        <p class="location-card__address">47 Old Liverpool Road<br>Warrington<br>WA5 1AF</p>
-                    </article>
-                    <article class="location-card reveal reveal--delay-3">
-                        <i data-lucide="map-pin" class="location-card__icon"></i>
-                        <h3 class="location-card__name">Preston</h3>
-                        <p class="location-card__address">21 Green Bank Road<br>Preston<br>PR2 5AF</p>
-                    </article>
-                    <article class="location-card reveal reveal--delay-3">
-                        <i data-lucide="map-pin" class="location-card__icon"></i>
-                        <h3 class="location-card__name">Liverpool</h3>
-                        <p class="location-card__address">8 Hall Road<br>Liverpool<br>L24 4PO</p>
-                    </article>
-                </div>
+                <ul class="locations__grid" role="list">
+                    <li>
+                        <article class="location-card reveal reveal--delay-1" aria-labelledby="location-ormskirk">
+                            <i data-lucide="map-pin" class="location-card__icon" aria-hidden="true"></i>
+                            <h3 class="location-card__name" id="location-ormskirk">Ormskirk</h3>
+                            <address class="location-card__address">
+                                3-5 St Helens Road<br>Ormskirk<br>L35 4PO
+                            </address>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="location-card reveal reveal--delay-2" aria-labelledby="location-southport">
+                            <i data-lucide="map-pin" class="location-card__icon" aria-hidden="true"></i>
+                            <h3 class="location-card__name" id="location-southport">Southport</h3>
+                            <address class="location-card__address">
+                                150 Lord Street<br>Southport<br>PR9 0NP
+                            </address>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="location-card reveal reveal--delay-3" aria-labelledby="location-warrington">
+                            <i data-lucide="map-pin" class="location-card__icon" aria-hidden="true"></i>
+                            <h3 class="location-card__name" id="location-warrington">Warrington</h3>
+                            <address class="location-card__address">
+                                47 Old Liverpool Road<br>Warrington<br>WA5 1AF
+                            </address>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="location-card reveal reveal--delay-3" aria-labelledby="location-preston">
+                            <i data-lucide="map-pin" class="location-card__icon" aria-hidden="true"></i>
+                            <h3 class="location-card__name" id="location-preston">Preston</h3>
+                            <address class="location-card__address">
+                                21 Green Bank Road<br>Preston<br>PR2 5AF
+                            </address>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="location-card reveal reveal--delay-3" aria-labelledby="location-liverpool">
+                            <i data-lucide="map-pin" class="location-card__icon" aria-hidden="true"></i>
+                            <h3 class="location-card__name" id="location-liverpool">Liverpool</h3>
+                            <address class="location-card__address">
+                                8 Hall Road<br>Liverpool<br>L24 4PO
+                            </address>
+                        </article>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+        <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
             <symbol id="paw-icon" viewBox="0 0 24 24">
                 <ellipse cx="6" cy="9" rx="2" ry="2.5" />
                 <ellipse cx="12" cy="6" rx="2" ry="2.5" />
@@ -113,51 +137,39 @@
         </svg>
 
         <div class="paw-divider" aria-hidden="true">
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
-            <svg class="paw" fill="currentColor">
-                <use href="#paw-icon" />
-            </svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
         </div>
 
-        <section class="contact-form-section reveal" id="contact-form">
+        <section class="contact-form-section reveal" id="contact-form" aria-labelledby="form-heading">
             <div class="contact-form__inner">
-                <h2 class="contact-form__heading">Send us a message</h2>
+                <h2 class="contact-form__heading" id="form-heading">Send us a message</h2>
                 <p class="contact-form__description">Fill out the form below and one of our team will be in touch within
                     24 hours.</p>
 
-                <form class="contact-form" novalidate>
+                <form class="contact-form" novalidate aria-describedby="form-required-note">
+                    <p id="form-required-note" class="visually-hidden">Fields marked with an asterisk are required.</p>
+
                     <div class="contact-form__row">
                         <div class="contact-form__field">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
                         </div>
                         <div class="contact-form__field">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true">
                         </div>
                     </div>
 
                     <div class="contact-form__row">
                         <div class="contact-form__field">
-                            <label for="phone">Phone (optional)</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone <span class="contact-form__optional">(optional)</span></label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
                         </div>
                         <div class="contact-form__field">
                             <label for="branch">Preferred Branch</label>
@@ -173,14 +185,14 @@
                     </div>
 
                     <div class="contact-form__field">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn--primary">Send Message</button>
 
-                    <div class="contact-form__success" hidden>
-                        <i data-lucide="check-circle"></i>
+                    <div class="contact-form__success" hidden role="status" aria-live="polite">
+                        <i data-lucide="check-circle" aria-hidden="true"></i>
                         <p>Thanks! Your message has been sent. We'll be in touch soon.</p>
                     </div>
                 </form>
@@ -188,35 +200,46 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer__inner">
             <div class="footer__brand">
-                <img src="images/logo.svg" alt="Doggie Walks Logo" class="logo">
+                <img src="images/logo.svg" alt="" class="logo">
                 <span>Doggie Walks</span>
                 <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
                 </p>
             </div>
 
-            <div class="footer__hours">
-                <h3>Opening Times</h3>
-                <ul>
-                    <li><span>Monday – Friday</span> 8am – 7pm</li>
-                    <li><span>Saturday</span> 8am – 5pm</li>
-                    <li><span>Sunday</span> 12pm – 5pm</li>
-                </ul>
+            <div class="footer__hours" aria-labelledby="hours-heading">
+                <h2 id="hours-heading">Opening Times</h2>
+                <dl>
+                    <div>
+                        <dt>Monday – Friday</dt>
+                        <dd>8am – 7pm</dd>
+                    </div>
+                    <div>
+                        <dt>Saturday</dt>
+                        <dd>8am – 5pm</dd>
+                    </div>
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>12pm – 5pm</dd>
+                    </div>
+                </dl>
             </div>
 
-            <div class="footer__contact">
-                <h3>Get In Touch</h3>
-                <ul>
-                    <li><a href="tel:01695883112">01695 883 112</a></li>
-                    <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
-                </ul>
+            <div class="footer__contact" aria-labelledby="footer-contact-heading">
+                <h2 id="footer-contact-heading">Get In Touch</h2>
+                <address>
+                    <ul>
+                        <li><a href="tel:+441695883112">01695 883 112</a></li>
+                        <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                    </ul>
+                </address>
             </div>
         </div>
 
         <div class="footer__bottom">
-            <p>&copy; 2026 Doggie Walks. All rights reserved.</p>
+            <p><small>&copy; 2026 Doggie Walks. All rights reserved.</small></p>
         </div>
     </footer>
 
@@ -224,4 +247,4 @@
     <script src="js/scripts.js"></script>
 </body>
 
-</html>
+</html>

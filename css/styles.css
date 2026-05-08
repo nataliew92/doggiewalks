@@ -1910,6 +1910,17 @@ p {
     font-size: var(--font-md);
 }
 
+.contact-form__optional {
+    color: var(--colour-muted);
+    font-weight: 400;
+    text-transform: none;
+}
+
+.contact-form__field label span[aria-hidden] {
+    color: var(--colour-sky-deep);
+    margin-left: 2px;
+}
+
 @keyframes success-fade {
     from {
         opacity: 0;
