@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Doggie Walks — our story, what we believe, and how our friendly dog walking service works across Lancashire and Merseyside.">
     <title>About | Doggie Walks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +15,20 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="../images/logo.svg" alt="Doggie Walks Logo" class="logo">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Doggie Walks home">
+            <img src="../images/logo.svg" alt="" class="logo">
             <span>Doggie Walks</span>
-        </div>
-        <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
+        </a>
+        <button class="header__menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <i data-lucide="menu" aria-hidden="true"></i>
         </button>
-        <nav class="header__nav">
+        <nav class="header__nav" id="primary-navigation" aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Meet The Team</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -34,16 +37,16 @@
         </nav>
     </header>
 
-    <main>
-        <section class="page-banner">
-            <img src="/images/puppy_jump.jpeg" alt="..." class="page-banner__image">
+    <main id="main-content">
+        <section class="page-banner" aria-labelledby="page-title">
+            <img src="/images/puppy_jump.jpeg" alt="" class="page-banner__image">
             <div class="page-banner__text">
-                <h1 class="page-banner__title">About Us</h1>
+                <h1 class="page-banner__title" id="page-title">About Us</h1>
             </div>
         </section>
 
-        <div class="promo-banner">
-            <div class="promo-banner__track">
+        <aside class="promo-banner" aria-label="Special offer">
+            <div class="promo-banner__track" aria-hidden="true">
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
@@ -51,21 +54,26 @@
                 <span>🐾 50% off home visits for new customers</span>
                 <span>🐾 50% off home visits for new customers</span>
             </div>
-        </div>
+            <p class="visually-hidden">50% off home visits for new customers.</p>
+        </aside>
 
-        <section class="about-intro reveal">
-            <h2 class="about-intro__heading">What we believe</h2>
+        <section class="about-intro reveal" aria-labelledby="believe-heading">
+            <h2 class="about-intro__heading" id="believe-heading">What we believe</h2>
             <div class="about-intro__inner">
-                <p class="about-intro__quote">Our canine friends should feel different terrain under their paws, hear
-                    different sounds, see different sights, and have a decent sniff about.</p>
-                <img src="images/fluffy__dog.jpeg" alt="..." class="about-intro__image">
+                <figure class="about-intro__figure">
+                    <blockquote class="about-intro__quote">
+                        <p>Our canine friends should feel different terrain under their paws, hear different sounds,
+                            see different sights, and have a decent sniff about.</p>
+                    </blockquote>
+                </figure>
+                <img src="images/fluffy__dog.jpeg" alt="A fluffy dog enjoying time outdoors" class="about-intro__image">
                 <p>While dogs need daily exercise to stay healthy, for many people it's not always possible to walk
                     their pets regularly. That's why we established <span class="text-brand">Doggie Walks</span> to help
                     people across Lancashire and Merseyside ensure their dogs live happy, active lives.</p>
             </div>
         </section>
 
-        <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+        <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
             <symbol id="paw-icon" viewBox="0 0 24 24">
                 <ellipse cx="6" cy="9" rx="2" ry="2.5" />
                 <ellipse cx="12" cy="6" rx="2" ry="2.5" />
@@ -77,52 +85,52 @@
         </svg>
 
         <div class="paw-divider" aria-hidden="true">
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
-            <svg class="paw" fill="currentColor"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
+            <svg class="paw" fill="currentColor" focusable="false"><use href="#paw-icon" /></svg>
         </div>
 
-        <section class="stats">
+        <section class="stats" aria-label="Doggie Walks by the numbers">
             <img src="images/about_hero.jpg" alt="" class="stats__image">
-            <div class="stats__overlay"></div>
-            <div class="stats__inner">
+            <div class="stats__overlay" aria-hidden="true"></div>
+            <dl class="stats__inner">
                 <div class="stats__item">
-                    <span class="stats__number">500+</span>
-                    <span class="stats__label">Happy dogs walked</span>
+                    <dt class="stats__label">Happy dogs walked</dt>
+                    <dd class="stats__number">500+</dd>
                 </div>
                 <div class="stats__item">
-                    <span class="stats__number">12</span>
-                    <span class="stats__label">Local branches</span>
+                    <dt class="stats__label">Local branches</dt>
+                    <dd class="stats__number">12</dd>
                 </div>
                 <div class="stats__item">
-                    <span class="stats__number">5+</span>
-                    <span class="stats__label">Years walking</span>
+                    <dt class="stats__label">Years walking</dt>
+                    <dd class="stats__number">5+</dd>
                 </div>
-            </div>
+            </dl>
         </section>
 
-        <section class="timeline-section reveal">
-            <h2 class="timeline-section__heading">How It Works</h2>
+        <section class="timeline-section reveal" aria-labelledby="how-heading">
+            <h2 class="timeline-section__heading" id="how-heading">How It Works</h2>
             <ol class="timeline">
                 <li class="timeline__item">
-                    <span class="timeline__number">1</span>
+                    <span class="timeline__number" aria-hidden="true">1</span>
                     <h3 class="timeline__title">We collect your dog</h3>
                     <p class="timeline__description">Your pup is collected from your home (or you can drop them off at
                         your nearest local branch — find your closest one on our contact page).</p>
                 </li>
                 <li class="timeline__item">
-                    <span class="timeline__number">2</span>
+                    <span class="timeline__number" aria-hidden="true">2</span>
                     <h3 class="timeline__title">A walk with their pals</h3>
                     <p class="timeline__description">With a maximum of <span class="text-brand">4 dogs per walk</span>,
                         your best friend heads to a local park for plenty of exercise, mental stimulation, socialisation
                         and play.</p>
                 </li>
                 <li class="timeline__item">
-                    <span class="timeline__number">3</span>
+                    <span class="timeline__number" aria-hidden="true">3</span>
                     <h3 class="timeline__title">Tired and happy at home</h3>
                     <p class="timeline__description">The result? A happier, calmer and more contented dog, returned
                         safely to you and ready to relax for the rest of the day.</p>
@@ -131,35 +139,46 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer__inner">
             <div class="footer__brand">
-                <img src="images/logo.svg" alt="Doggie Walks Logo" class="logo">
+                <img src="images/logo.svg" alt="" class="logo">
                 <span>Doggie Walks</span>
                 <p>Professional and personal care for your beloved four-legged friends across Lancashire and Merseyside.
                 </p>
             </div>
 
-            <div class="footer__hours">
-                <h3>Opening Times</h3>
-                <ul>
-                    <li><span>Monday – Friday</span> 8am – 7pm</li>
-                    <li><span>Saturday</span> 8am – 5pm</li>
-                    <li><span>Sunday</span> 12pm – 5pm</li>
-                </ul>
+            <div class="footer__hours" aria-labelledby="hours-heading">
+                <h2 id="hours-heading">Opening Times</h2>
+                <dl>
+                    <div>
+                        <dt>Monday – Friday</dt>
+                        <dd>8am – 7pm</dd>
+                    </div>
+                    <div>
+                        <dt>Saturday</dt>
+                        <dd>8am – 5pm</dd>
+                    </div>
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>12pm – 5pm</dd>
+                    </div>
+                </dl>
             </div>
 
-            <div class="footer__contact">
-                <h3>Get In Touch</h3>
-                <ul>
-                    <li><a href="tel:01695883112">01695 883 112</a></li>
-                    <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
-                </ul>
+            <div class="footer__contact" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <address>
+                    <ul>
+                        <li><a href="tel:+441695883112">01695 883 112</a></li>
+                        <li><a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a></li>
+                    </ul>
+                </address>
             </div>
         </div>
 
         <div class="footer__bottom">
-            <p>&copy; 2026 Doggie Walks. All rights reserved.</p>
+            <p><small>&copy; 2026 Doggie Walks. All rights reserved.</small></p>
         </div>
     </footer>
 
